@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/zamanText"
+        android:layout_width="235dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="42dp"
+        android:text="Kalan Zaman: 15"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/skorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skorText"
+        android:layout_width="267dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="21dp"
+        android:text="Skor: 0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skorText">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/havuc" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/havuc" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/havuc" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/havuc" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/havuc" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/havuc" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/havuc" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/havuc" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="skoruArttir"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/havuc" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
